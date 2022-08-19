@@ -1,0 +1,11 @@
+az storage account create \
+    --resource-group $RESOURCE_GROUP \
+    --name $STORAGE_ACCOUNT \
+    --sku Standard_LRS
+az functionapp create \
+    --resource-group $RESOURCE_GROUP \
+    --name $FUNCTION_APP \
+    --storage-account $STORAGE_ACCOUNT \
+    --consumption-plan-location $LOCATION \
+    --runtime java \
+    --functions-version 4

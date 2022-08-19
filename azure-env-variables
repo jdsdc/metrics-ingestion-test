@@ -1,0 +1,7 @@
+RESOURCE_GROUP=ecocloud-gateway
+EVENT_HUB_NAMESPACE=evhns-ecocloud-gateway-dev
+EVENT_HUB_NAME=evh-metrics-ts-dev
+EVENT_HUB_AUTHORIZATION_RULE=evhar-metrics-ts-dev
+STORAGE_ACCOUNT=ecocloud
+FUNCTION_APP=func-metrics-ts-dev
+LOCATION=northeurope

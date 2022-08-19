@@ -1,0 +1,16 @@
+choco install azure-cli
+choco install azure-functions-core-tools
+
+
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-event-hub-cosmos-db?tabs=bash
+
+
+# Read and set local variables from file
+set -o allexport; azure-env-variables; set +o allexport
+
+# Carete eventhub
+set -o allexport; create-eventhub-set-env-variables-commands; set +o allexport
+
+# Create storage account
+set -o allexport; create-storage-function-app-commands; set +o allexport
+
